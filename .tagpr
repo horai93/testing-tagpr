@@ -45,4 +45,5 @@
 [tagpr]
 	vPrefix = true
 	releaseBranch = main
-	versionFile = -
+	versionFile = package.json
+	command = "sed -i "s/\"version\": \".*\"/\"version\": \"$(calver --layout YY.0M.MICRO --next)\"/" package.json"
