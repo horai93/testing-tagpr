@@ -13,7 +13,7 @@ jobs:
     - name: Install calver
       run: |
         curl -o calver.deb -L https://github.com/k1LoW/calver/releases/download/v0.7.3/calver_0.7.3-1_amd64.deb
-        dpkg -i calver.deb
+        sudo dpkg -i calver.deb
     - uses: actions/checkout@v4
     - uses: Songmu/tagpr@v1
       env:
